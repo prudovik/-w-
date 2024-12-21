@@ -25,8 +25,8 @@ class Zadacha {
                 raznost = massiv[m][n] - massiv[m][n+1];
                 if((massiv[m][n+1] - massiv[m][n+2] == raznost) && (raznost>0)) check += 1;
             }
-            if(check == massiv[m].Length-3) Console.WriteLine($"Номер строки: {0}", m+1);
-            
+            int stroka = m + 1;
+            if(check == massiv[m].Length-2) Console.WriteLine($"Номер строки: {stroka}");
         }
     }
 }
